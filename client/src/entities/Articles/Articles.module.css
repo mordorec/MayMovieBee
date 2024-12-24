@@ -1,0 +1,34 @@
+.articlesContainer {
+}
+  
+.oneArticle {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.oneArticle:first-child {
+  margin-top: 10px;
+}
+  
+.articleInfo {
+
+}
+  
+.articleText {
+  color: white;
+  font-size: 0.9rem;
+}
+  
+.articleImg {
+  width: 100%;
+  max-width: 240px;
+  max-height: 130px;
+  cursor: pointer;
+}
+  
+.articleTitle {
+  color: white;
+  font-size: 1.3rem;
+  cursor: pointer;
+}

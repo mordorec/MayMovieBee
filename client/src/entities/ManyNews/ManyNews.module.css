@@ -1,0 +1,13 @@
+.news {
+    padding-bottom: 5px;
+}
+
+.news:first-child {
+    padding-top: 5px;
+}
+  
+.newsText {
+    color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+}

@@ -1,0 +1,27 @@
+.videoContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1%;
+} 
+  
+.video {
+    height: 70%;
+    margin-top: 10px;
+}
+  
+.videoTitle {
+    font-size: 1.1rem;
+    display: flex;
+    text-align: center;
+}
+  
+.videoLink {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .videoContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

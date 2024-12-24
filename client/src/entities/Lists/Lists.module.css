@@ -1,0 +1,35 @@
+.lists {
+    color: white;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+}
+
+.list:hover {
+    box-shadow: 14px 0px 81px -43px rgba(26, 107, 163, 0.94);
+    background-color: #243c58;
+    border: 1px solid #19283b;
+    border-radius: 5px;
+}
+
+.list:first-child {
+    margin-top: 10px;
+}
+
+.image {
+    width: 100%;
+    max-width: 110px;
+    height: 110px;
+    object-fit: cover;
+    cursor: pointer;
+    padding: 10px;
+    user-select: none;
+}
+
+.titleList {
+    font-size: 1.5rem;
+    padding-left: 15px;
+    cursor: pointer;
+}

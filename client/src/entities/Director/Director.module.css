@@ -1,0 +1,33 @@
+.director {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 3%;
+}
+  
+.directorImg {
+    max-width: 320px;
+    object-fit: cover;
+}
+  
+.directorName {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 7%;
+}
+
+.directorInfo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1%;
+}
+  
+.directorMiniInfo {
+    color: #DEDEDE;
+    font-size: 1.1rem;
+    margin-bottom: 2%;
+}
+
+.directorMiniInfo:last-child {
+    margin-bottom: 0;
+}

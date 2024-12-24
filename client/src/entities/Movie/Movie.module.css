@@ -1,0 +1,65 @@
+.movie {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+    padding: 25px 0;
+}
+
+.picAndInfo {
+    display: flex;
+}
+
+.movieImg {
+    width: 320px;
+    height: 450px;
+}
+  
+.movieTitle {
+    color: white;
+    font-size: 2rem;
+    padding-bottom: 40px;
+}
+
+.movieInfoContainer {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    min-width: 400px;
+    max-width: 500px;
+}
+  
+.movieInfo {
+    color: #DEDEDE;
+    font-size: 1rem;
+    padding-bottom: 10px;
+}
+
+.ratingAndCast {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+  
+.movieCast {
+    color: #DEDEDE;
+    font-size: 1rem;
+    cursor: pointer;
+    padding-bottom: 5px;
+    max-width: fit-content;
+}
+
+.rating {
+    color: white;
+    font-size: 1.8rem;
+    padding-bottom: 40px;;
+}
+  
+.descriptionTitle {
+    color: white;
+    font-size: 1.6rem;
+}
+  
+.descriptionText {
+    color: white;
+    font-size: 1.1rem;
+}

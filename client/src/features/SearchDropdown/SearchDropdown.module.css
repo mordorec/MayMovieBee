@@ -1,0 +1,33 @@
+.dropdown {
+    position: relative;
+}
+
+.inputField {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    width: 96%;
+}
+
+.dropdownMenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #3f5984fd;
+    border-radius: 4px;
+    /* margin-top: 5px;
+    overflow: hidden; */
+    z-index: 10;
+}
+
+.dropdownItem {
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.dropdownItem:hover {
+    background-color: #15253a;
+}

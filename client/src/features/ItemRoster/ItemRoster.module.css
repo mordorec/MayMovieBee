@@ -1,0 +1,29 @@
+.itemsRoster {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+}
+
+.removeButton {
+    padding: 4px;
+    border-radius: 4px;
+    border: 1px solid white;
+    transition: .3s ease;
+}
+
+.removeButton:hover {
+    background-color: antiquewhite;
+}

@@ -1,0 +1,27 @@
+.news {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding:0;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.newsText {
+    list-style-type: none;
+    transition: .3s ease;
+}
+
+.showMoreButton {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 0.9rem;
+    padding:0;
+    transition: .3s ease;
+}
+
+.showMoreButton:hover,
+.cardText:hover {
+    color: gainsboro;
+}

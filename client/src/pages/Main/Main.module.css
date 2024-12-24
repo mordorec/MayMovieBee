@@ -1,0 +1,12 @@
+.secondRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.premiere {
+    width: 74%;
+}
+
+.news {
+    width: 25%;
+}

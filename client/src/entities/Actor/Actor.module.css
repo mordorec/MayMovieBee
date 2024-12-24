@@ -1,0 +1,33 @@
+.actor {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 3%;
+}
+  
+.actorImg {
+    max-width: 320px;
+    object-fit: cover;
+}
+  
+.actorName {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 7%;
+}
+
+.actorInfo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1%;
+}
+  
+.actorMiniInfo {
+    color: #DEDEDE;
+    font-size: 1.1rem;
+    margin-bottom: 2%;
+}
+
+.actorMiniInfo:last-child {
+    margin-bottom: 0;
+}

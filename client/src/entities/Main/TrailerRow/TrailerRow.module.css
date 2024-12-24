@@ -1,0 +1,38 @@
+.videoContainer {
+    display: flex;
+    gap: 1%;
+    position: relative;
+    margin-top: 10px;
+}
+
+.video {
+    width: 23%;
+}
+
+.videoTitle {
+    font-size: 1.1rem;
+    text-align: center;
+    display: flex;
+}
+
+.whiteText {
+    text-decoration: none;
+    color: white;
+    transition: .3s ease-in-out;
+}
+
+.whiteText:hover {
+    color: #e2e1e1
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 32%;
+    cursor: pointer;
+}

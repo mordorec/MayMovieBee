@@ -1,0 +1,38 @@
+.buttonStyle {
+  border: none;
+  background-color: #243c58;
+  color: #FFFFFF;
+  margin-bottom: 0.6rem;
+  width: 100%;
+  padding: 8px 0;
+  margin: 10px;
+  border-radius: 50px;
+  transition: .3s ease;
+}
+
+.oneSection {
+  background-color: #14273c;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.groupButtons {
+  display: flex;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.1rem;
+  padding-top: 5px;
+}
+
+.oneSection:first-child {
+  margin-top: 10px;
+}
+
+.buttonStyle:hover {
+  background-color: #3f5984fd;
+}

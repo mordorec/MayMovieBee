@@ -1,0 +1,24 @@
+@font-face {
+    font-family: NewsreaderB;
+    src: url('../fonts/Newsreader_36pt-Bold.ttf')
+}
+
+@font-face {
+    font-family: NewsreaderM;
+    src: url('../fonts/Newsreader_24pt-Medium.ttf')
+}
+
+@font-face {
+    font-family: NewsreaderL;
+    src: url('../fonts/Newsreader_24pt-Light.ttf')
+}
+
+@font-face {
+    font-family: NewsreaderRmax;
+    src: url('../fonts/Newsreader_24pt-Regular.ttf')
+}
+
+@font-face {
+    font-family: NewsreaderRmin;
+    src: url('../fonts/Newsreader_14pt-Regular.ttf')
+}

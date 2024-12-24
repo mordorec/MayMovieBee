@@ -1,0 +1,43 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #15253a;
+    color: white;
+    margin-top: 100px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 60px;
+    user-select: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logoText {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.footerBtn {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+    transition: .3s ease;
+}
+
+.footerBtn:hover{
+    color:gainsboro;
+}

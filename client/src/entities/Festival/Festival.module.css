@@ -1,0 +1,23 @@
+.fest {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+  
+.festImg {
+    max-width: 60%;
+    height: 60%;
+}
+  
+.festTitle {
+    color: white;
+    font-size: 1.6rem;
+    max-width: 60%;
+}
+  
+.festText {
+    max-width: 59%;
+    color: white;
+    font-size: 1.1rem;
+    text-align: justify;
+}
