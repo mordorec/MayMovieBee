@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { createList, fetchMovies, addMovieToList } from "../../shared/api/movieAPI";
+import { createList, fetchMovies } from "../../shared/api/movieAPI";
 import CreateModal from '../../shared/ui/CreateModal/CreateModal';
 import SearchDropdown from '../../features/SearchDropdown/SearchDropdown';
 import ItemRoster from '../../features/ItemRoster/ItemRoster';
