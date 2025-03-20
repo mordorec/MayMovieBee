@@ -2,7 +2,8 @@
 <h3 style="font-size: 18px;">Type 'npm run dev' to run this project (for frontend and backend separately).</h3>
 <h3 style="font-size: 18px;">How does MayMovieBee look like in general?</h3>
 <h2 style="font-size: 20px;">Home page</h2>
-![image](https://github.com/user-attachments/assets/014f05dd-5302-4339-be40-cedda6f2fece)
+https://github.com/user-attachments/assets/014f05dd-5302-4339-be40-cedda6f2fece
 <h2 style="font-size: 20px;">Movie page</h2>
-![image](https://github.com/user-attachments/assets/4fcdcd7f-7845-4c5c-8fb8-096ed82ef509)
+https://github.com/user-attachments/assets/4fcdcd7f-7845-4c5c-8fb8-096ed82ef509
 <h2 style="font-size: 20px;">If you want to see more, run this project.</h2>
+![image](https://github.com/user-attachments/assets/cd334a80-590b-4df3-aa57-3c6bc7c6f64b)
