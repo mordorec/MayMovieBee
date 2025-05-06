@@ -1,5 +1,6 @@
 .videoContainer {
     display: flex;
+    flex-wrap: wrap;
     gap: 1%;
     position: relative;
     margin-top: 10px;
@@ -22,7 +23,7 @@
 }
 
 .whiteText:hover {
-    color: #e2e1e1
+    color: #e2e1e1;
 }
 
 .button {
@@ -30,9 +31,28 @@
     border: none;
     color: white;
     font-size: 1.2rem;
-    align-items: center;
+    cursor: pointer;
     position: absolute;
     right: 0;
     top: 32%;
-    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .videoContainer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .video {
+        width: 48%;
+    }
+
+    .button {
+        position: static;
+        margin-top: 10px;
+        align-self: flex-end;
+        margin-bottom: 10px;
+        display: flex;
+        font-size: 1.1rem;
+    }
 }

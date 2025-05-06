@@ -10,3 +10,17 @@
 .news {
     width: 25%;
 }
+
+@media(max-width: 600px) {
+    .secondRow {
+        flex-direction: column;
+    }
+    .premiere, 
+    .news {
+        width: 100%;
+    }
+    
+    .news {
+        margin-top: 30px;
+    }
+}

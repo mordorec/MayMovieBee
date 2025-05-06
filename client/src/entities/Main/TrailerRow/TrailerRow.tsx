@@ -4,13 +4,14 @@ import { TRAILERS_ROUTE } from '../../../shared/lib/utils/consts';
 import { useNavigate } from 'react-router-dom';
 import s from './TrailerRow.module.css';
 import TitleWithUnderline from '../../../shared/ui/TitleWithUnderline/TitleWithUnderline';
-import ReactPlayer from 'react-player/youtube'
-// import PlayIcon from '../../../assets/play.svg'
+import ReactPlayer from 'react-player/youtube';
+import { useMediaQuery } from 'react-responsive';
 
 const TrailerRow = observer(() => {
   const { store } = useStore();
   const visibleTrailers = 4;
   const navigate = useNavigate();
+  const isMobile = useMediaQuery({ maxWidth: 600 });
 
   return (
     <>
@@ -23,7 +24,6 @@ const TrailerRow = observer(() => {
               url={trailer.url}
               width="100%"
               height="140px"
-              // playIcon={<PlayIcon width="60" />}
               playing
               controls
             />
@@ -36,7 +36,7 @@ const TrailerRow = observer(() => {
         ))}
         {visibleTrailers < store.trailers.length && (
           <button onClick={() => navigate(TRAILERS_ROUTE)} className={s.button}>
-            Еще
+            {isMobile ? "Посмотреть все трейлеры" : "Еще"}
           </button>
         )}
       </div>  
