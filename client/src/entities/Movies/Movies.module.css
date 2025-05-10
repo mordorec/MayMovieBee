@@ -47,3 +47,11 @@
     padding-bottom: 20px;
     padding-top: 10px;
 }
+
+.emptyMessage {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+    font-family: NewsreaderL;
+}

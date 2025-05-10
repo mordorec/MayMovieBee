@@ -18,13 +18,12 @@ const Lists = observer(() => {
                     <div
                         className={s.list}
                         onClick={() => {
-                            store.setSelectedList(list);
-                            navigate(MOVIES_ROUTE);
+                            navigate(MOVIES_ROUTE.replace(':listId', list.id.toString()));
                         }}
                         key={list.id}
                     >
-                        <img className={s.image} alt="Картиночка" src={import.meta.env.VITE_API_URL + list.img} onClick={() => navigate(MOVIES_ROUTE)}/>
-                        <h2 className={s.titleList} onClick={() => navigate(MOVIES_ROUTE)} >{list.name}</h2>
+                        <img className={s.image} alt="Картиночка" src={import.meta.env.VITE_API_URL + list.img} onClick={() => navigate(MOVIES_ROUTE.replace(':listId', list.id.toString()))}/>
+                        <h2 className={s.titleList} onClick={() => navigate(MOVIES_ROUTE.replace(':listId', list.id.toString()))}>{list.name}</h2>
                     </div>
                 )}
             </div>
