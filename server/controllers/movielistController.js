@@ -37,7 +37,7 @@ class MovieListController {
                 }]
             });
 
-            if (!List) {
+            if (!list) {
                 return next(ApiError.badRequest('List not found'));
             }
 
