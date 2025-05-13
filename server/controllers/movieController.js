@@ -1,18 +1,28 @@
 const uuid = require('uuid')
 const path = require('path')
-const {Movie, Country, Genre, Director, Actor} = require('../models/models')
+const {Movie, Country, Genre, Director, Actor , MovieActor} = require('../models/models')
 const ApiError = require('../error/ApiError');
-console.log("MovieController is initialized");
 const fetchRatingFromAPI = require('./fetchRatingFromAPI');
 
 class MovieController {
     async create(req, res, next) {
         try {
-        let {name, rating, country_id, director_id, year, description, genre_id, tagline} = req.body
+        let {name, rating, country_id, director_id, year, description, genre_id, tagline, actors} = req.body
         const {img} = req.files
         let filename = uuid.v4() + ".jpg"
         img.mv(path.resolve(__dirname, '../static', filename))
         const movie = await Movie.create({name, rating, country_id, director_id, year, description, genre_id, tagline, img: filename})
+        
+        if (actors) {
+            const actorIds = JSON.parse(actors);
+            await Promise.all(actorIds.map(actorId => 
+                MovieActor.create({
+                    movie_id: movie.id,
+                    actor_id: actorId
+                })
+            ));
+        }
+        
         return res.json(movie)
         } catch (e) {
             next(ApiError.badRequest(e.message))

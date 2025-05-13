@@ -1,9 +1,9 @@
 import {makeAutoObservable} from 'mobx';
-import { User } from '../../shared/types/entities';
+import { UserEntity } from '../../shared/types/entities';
 
 export default class UserStore {
     private _isAuth: boolean = false;
-    private _user: User | {} = {};
+    private _user: UserEntity | null = null;
 
     constructor() {
         makeAutoObservable(this);
@@ -13,7 +13,7 @@ export default class UserStore {
         this._isAuth = bool;
     }
 
-    setUser(user: User) {
+    setUser(user: UserEntity) {
         this._user = user;
     }
 
@@ -21,7 +21,7 @@ export default class UserStore {
         return this._isAuth;
     }
 
-    get user(): User | {} {
+    get user(): UserEntity | null {
         return this._user;
     }
 }
