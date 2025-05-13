@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import s from './SearchDropdown.module.css';
 import { SearchDropdownProps } from '../../shared/types/modal'
+import { ChangeEvent } from 'react';
 
 const SearchDropdown = <T extends { id: number; name: string }>({ 
     searchValue, 
@@ -20,7 +21,7 @@ const SearchDropdown = <T extends { id: number; name: string }>({
 
     const handleItemSelect = (item: T) => {
         onItemSelect(item)
-        onSearchChange({ target: { value: item.name } })
+        onSearchChange({ target: { value: item.name } } as ChangeEvent<HTMLInputElement>)
         setDropdownVisible(false)
     };
 

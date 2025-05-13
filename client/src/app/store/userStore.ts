@@ -3,7 +3,7 @@ import { User } from '../../shared/types/entities';
 
 export default class UserStore {
     private _isAuth: boolean = false;
-    private _user: User | {} = {};
+    private _user: User | null = null;
 
     constructor() {
         makeAutoObservable(this);
@@ -21,7 +21,7 @@ export default class UserStore {
         return this._isAuth;
     }
 
-    get user(): User | {} {
+    get user(): User | null {
         return this._user;
     }
 }

@@ -70,7 +70,6 @@ const CreateMovie = observer(({ show, onHide }: ModalProps) => {
         formData.append('director_id', `${store.selectedDirector.id}`);
         formData.append('genre_id', `${store.selectedGenre.id}`);
         formData.append("actors", JSON.stringify(actors.map(actor => actor.id)));
-        console.log(Array.from(formData.entries()));
         createMovie(formData).then(() => onHide());
     };
 
