@@ -99,3 +99,10 @@ export interface PremiereEntity {
     date: Date;
     movie: MovieEntity
 }
+
+export interface User {
+    id: number;
+    email: string;
+    password: string;
+    role: string;
+}

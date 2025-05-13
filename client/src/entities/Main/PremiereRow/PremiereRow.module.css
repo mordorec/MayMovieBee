@@ -33,7 +33,31 @@
     justify-content: center;
 }
 
+.sliderContainer {
+    width: 100%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 5px;
+}
+
+.sliderContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.slidesInner {
+    display: flex;
+    width: fit-content;
+}
+
 @media (max-width: 600px) {
+    .premiere {
+        width: 33vw;
+        min-width: 100px;
+        margin-right: 10px;
+        flex-shrink: 0;
+    }
     
     .premiereImg {
         height: 180px;
