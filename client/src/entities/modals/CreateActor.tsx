@@ -75,7 +75,7 @@ const CreateActor = observer(({ show, onHide }: ModalProps) => {
                 value={town}
                 onChange={e => setTown(e.target.value)}
                 className={s.inputField}
-                placeholder="Введите город"
+                placeholder="Введите город рождения"
                 type="text"
             />
             <input
